@@ -1,11 +1,11 @@
 # test.py
+import pytest
+
 def test_addition():
-    assert 1 + 1 == 2, "Test Failed"
+    assert 1 + 1 == 2, "Addition test failed"
 
 def test_subtraction():
-    assert 2 - 1 == 1, "Test Failed"
+    assert 2 - 1 == 1, "Subtraction test failed"
 
 if __name__ == "__main__":
-    test_addition()
-    test_subtraction()
-    print("All tests passed!")
+    pytest.main()
